@@ -16,15 +16,15 @@ var articles = {
     articleTwo:{ 
                 title:'Article Two| Rajashri',
                 heading:'Article Two',
-                content:`<p> This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. </p><br/>
-                        <p> This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. </p>`
+                content:`<p> This is content for my article two. This is content for my article two. This is content for my article two. This is content for my article two. This is content for my article two. This is content for my article two. </p><br/>
+                        <p> This is content for my article two. This is content for my article two. This is content for my article two. This is content for my article two. This is content for my article two. This is content for my article two. </p>`
         
             }, 
     articleThree:{ 
-                title:'Article One | Rajashri',
-                heading:'Article One',
-                content:`<p> This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. </p><br/>
-                        <p> This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. </p>`
+                title:'Article Three | Rajashri',
+                heading:'Article Three',
+                content:`<p> This is content for my article Three. This is content for my article Three. This is content for my article Three. This is content for my article Three. This is content for my article Three. This is content for my article Three. </p><br/>
+                        <p> This is content for my article Three. This is content for my article Three. This is content for my article Three. This is content for my article Three. This is content for my article Three. This is content for my article Three. </p>`
         
              }
 };
