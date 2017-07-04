@@ -1,3 +1,4 @@
+
 body {
     font-family: sans-serif;
     background-color: lightgrey;
@@ -20,3 +21,13 @@ body {
     height: 200px;
 }
 
+.container {
+              max-width:800px;
+              margin:0 auto;
+              color:grey;
+              font:sans-serif;
+               
+              padding-right:10px; 
+              padding-left:10px;
+              padding:60px; 
+}
