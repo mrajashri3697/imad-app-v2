@@ -10,12 +10,14 @@ var articles = {
     articleOne :{
                 title:'Article One | Rajashri',
                 heading:'Article One',
+                date:'July 1,2017',
                 content:`<p> This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. </p><br/>
                         <p> This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. This is content for my article one. </p>`
             }, 
     articleTwo:{ 
                 title:'Article Two| Rajashri',
                 heading:'Article Two',
+                date:'July 2,2017',
                 content:`<p> This is content for my article two. This is content for my article two. This is content for my article two. This is content for my article two. This is content for my article two. This is content for my article two. </p><br/>
                         <p> This is content for my article two. This is content for my article two. This is content for my article two. This is content for my article two. This is content for my article two. This is content for my article two. </p>`
         
@@ -23,6 +25,7 @@ var articles = {
     articleThree:{ 
                 title:'Article Three | Rajashri',
                 heading:'Article Three',
+                 date:'July 3,2017',
                 content:`<p> This is content for my article Three. This is content for my article Three. This is content for my article Three. This is content for my article Three. This is content for my article Three. This is content for my article Three. </p><br/>
                         <p> This is content for my article Three. This is content for my article Three. This is content for my article Three. This is content for my article Three. This is content for my article Three. This is content for my article Three. </p>`
         
