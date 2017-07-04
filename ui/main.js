@@ -17,6 +17,7 @@ button.onclick =function(){
     
  
    request.open('GET','http://mrajashri3697.imad.hasura-app.io/counter',true);
+     var span = document.getElementById('count');
      span.innerHTML="2345";
     
     
