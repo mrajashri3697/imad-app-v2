@@ -14,14 +14,14 @@ button.onclick =function(){
             if(request.status === 200){
                 var counter = request.responseText;
                
-                span.innerHTML="hello";
+                span.innerHTML=counter.toString();
             }
         }
     };
     
  
    request.open('GET','http://mrajashri3697.imad.hasura-app.io/counter',true);
-    
+   request.send(null);
     
     
 };
