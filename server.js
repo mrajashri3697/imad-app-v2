@@ -14,7 +14,8 @@ var articleOne ={
 };
 
 
-funtion createTemplate(data){
+function createTemplate(data)
+{
         var htmlTemplate = `
         <html>
             <head>
@@ -39,7 +40,6 @@ funtion createTemplate(data){
             </body>
         </html>
         `;
-
 }
 
 app.get('/', function (req, res) {
