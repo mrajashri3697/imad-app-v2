@@ -158,9 +158,9 @@ app.get('/:articleName', function (req, res) {
 
 var pool = new Pool(config);
 app.get('/user/:userName', function (req, res) {
-    var userData1 = req.params.userName;
+    var userData = req.params.userName;
     
-    pool.query("SELECT * from User WHERE Username ='"+ req.params.userName + "'", function(err,result){
+    pool.query("SELECT * from User WHERE Username ="+ req.params.userName, function(err,result){
         if(err) res.status(500).send(err.toString());
         else 
         {
@@ -171,7 +171,7 @@ app.get('/user/:userName', function (req, res) {
             else
             {
                 var userData= result.rows[0];
-                res.send(createUserTemplate(userData));
+                res.send(JSON.stringify(createUserTemplate(userData)));
             }
             
                 
