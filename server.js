@@ -137,10 +137,7 @@ app.get('/user/:userName', function (req, res) {
             
                 
         }
-            
-            
-            
-        }
+         
     });
   res.send(createTemplate(userData));
 }); 
