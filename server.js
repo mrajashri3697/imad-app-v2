@@ -171,7 +171,7 @@ app.get('/user/:userName', function (req, res) {
             else
             {
                 var userData= result.rows;
-                res.send(JSON.stringify(createUserTemplate(userData)));
+                res.send(createUserTemplate(userData));
             }
             
                 
