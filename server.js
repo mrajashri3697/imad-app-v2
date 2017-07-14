@@ -158,7 +158,7 @@ app.get('/:articleName', function (req, res) {
 
 var pool = new Pool(config);
 app.get('/user/:userName', function (req, res) {
-   var data = req.params.userName;
+   var data = req.params.user.userName;
     
     pool.query("SELECT * from test WHERE Username = " + data, function(err,result){
         if(err) res.status(500).send(err.toString());
