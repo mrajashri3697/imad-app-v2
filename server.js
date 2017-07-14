@@ -47,7 +47,7 @@ function createUserTemplate(data)
     
         var id=data.id;
         var date=data.bdate;
-        var username=data.Username;
+        var username=data.username;
         var FN=data.FirstName;
         var LN=data.LastName;
         var cid=data.course_id;
