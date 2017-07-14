@@ -42,6 +42,44 @@ var articles = {
 };
 
 
+function createUserTemplate(data)
+{
+    
+        var id=data.id;
+        var date=data.bdate;
+        var username=data.Username;
+        var FN=data.FirstName;
+        var LN=data.LastName;
+        var cid=data.course_id;
+        var htmlTemplate = `
+        <html>
+            <head>
+              <title>${id}</title>    
+              <meta view="viewport" content="width=device-width" initial-scale="1"/>
+              <link rel="stylesheet" href="/ui/style.css" />
+            </head>
+            <body>
+                <div>
+                    <a href="/" >HOME</a>
+                    <hr/>
+              </div>
+              <div class="container">
+                <h3> ${username} </h3>
+                <div> ${date} </div>
+              
+                <div>
+                    ${FN}
+                    ${LN}
+                    ${cid}
+                </div>
+              </div>
+              
+            </body>
+        </html>
+        `;
+        return htmlTemplate;
+}
+
 function createTemplate(data)
 {
     
@@ -133,7 +171,7 @@ app.get('/user/:userName', function (req, res) {
             else
             {
                 var userData= result.rows[0];
-                res.send(createTemplate(userData));
+                res.send(createUserTemplate(userData));
             }
             
                 
