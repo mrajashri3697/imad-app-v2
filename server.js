@@ -170,15 +170,15 @@ app.get('/user/:userName', function (req, res) {
             }
             else
             {
-                var userData= result.rows;
-                res.send(createUserTemplate(userData));
+                var UserData= result.rows[0];
+                res.send(createUserTemplate(UserData));
             }
             
                 
         }
          
     });
-  res.send(createTemplate(userData));
+  
 }); 
 
 
