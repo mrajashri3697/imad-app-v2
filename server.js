@@ -160,7 +160,7 @@ var pool = new Pool(config);
 app.get('/user/:userName', function (req, res) {
    var data = req.params.userName;
     
-    pool.query("SELECT * from User WHERE id = 1", function(err,result){
+    pool.query("SELECT * from users WHERE username ="+ data , function(err,result){
         if(err) res.status(500).send(err.toString());
         else 
         {
