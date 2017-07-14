@@ -118,6 +118,20 @@ app.get('/:articleName', function (req, res) {
   res.send(createTemplate(articles[articleName]));
 }); 
 
+app.get('/user/:userName', function (req, res) {
+    
+    
+    pool.query("SELECT * from User WHERE Username ="+ req.params.userName, function(err,result){
+        if(err) res.status(500).send(err.toString());
+        else
+        {
+            res.send(JSON.stringify(result.rows));
+        }
+    });
+  res.send(createTemplate(userData));
+}); 
+
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
