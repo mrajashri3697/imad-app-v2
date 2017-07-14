@@ -170,7 +170,7 @@ app.get('/user/:userName', function (req, res) {
             }
             else
             {
-                var userData= result.rows[0];
+                var userData= result.rows;
                 res.send(JSON.stringify(createUserTemplate(userData)));
             }
             
