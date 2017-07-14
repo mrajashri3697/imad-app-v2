@@ -65,7 +65,7 @@ function createUserTemplate(data)
               </div>
               <div class="container">
                 <h3> ${username} </h3>
-                <div> ${date} </div>
+                <div> ${date.toDateString()} </div>
               
                 <div>
                     ${FN}
@@ -166,7 +166,7 @@ app.get('/user/:cuserName', function (req, res) {
         {
             if(result.rows.length === 0)
             {
-                res.status(404).send("Article not Found.");
+                res.status(404).send("User not Found.");
             }
             else
             {
